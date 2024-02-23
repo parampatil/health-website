@@ -1,0 +1,79 @@
+.home-page header {
+    height: 10vh;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-page h1 {
+    font-size: 20px;
+}
+
+.home-page span {
+    color: blueviolet;
+}
+
+.home-page nav {
+    width: 200px;
+    height: 100%;
+}
+
+.home-page ul {
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-page li {
+    list-style-type: none;
+}
+
+.home-page button {
+    background-color: blueviolet;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 1s;
+}
+
+.home-page button:hover {
+    background-color: rgb(109, 33, 180);
+}
+
+.home-page .nav-link {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.home-page main {
+    height: 80vh;
+    background-image: url("../../assets/images/home-bg.jpg");
+    background-size: cover;
+    background-position: 25% 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-page .home-introduction {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.home-page h2 {
+    font-size: 30px;
+}
+
+.home-page p {
+    font-size: 18px;
+}
+
+.home-page footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
