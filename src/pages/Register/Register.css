@@ -1,4 +1,4 @@
-.signup-page {
+.register-page {
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.signup-page .content {
+.register-page .content {
     width: 80%;
     max-width: 1200px;
     margin: 20px;
@@ -15,13 +15,13 @@
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
-.signup-page h2 {
+.register-page h2 {
     color: #67a471;
     text-align: center;
 }
 
-.signup-page input,
-.signup-page select {
+.register-page input,
+.register-page select {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -29,11 +29,11 @@
     font-size: 16px;
 }
 
-.signup-page input {
+.register-page input {
     width: 100%;
 }
 
-.signup-page select {
+.register-page select {
     width: 49.7%;
     padding: 10px;
     -moz-appearance: none;
@@ -74,18 +74,18 @@
     gap: 10px;
 }
 
-.signup-page a {
+.register-page a {
     color: #67a471;
     margin-top: 20px;
     display: inline-block;
     text-decoration: none;
 }
 
-.signup-page a:hover {
+.register-page a:hover {
     text-decoration: underline;
 }
 
-.signup-page button {
+.register-page button {
     background-color: #67a471;
     color: white;
     width: 100%;
@@ -97,11 +97,11 @@
     cursor: pointer;
 }
 
-.signup-page button:hover {
+.register-page button:hover {
     background-color: #4f8257;
 }
 
-.signup-page .footer {
+.register-page .footer {
     margin-top: 30px;
     text-align: center;
 }

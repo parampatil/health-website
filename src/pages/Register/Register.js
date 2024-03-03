@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "./SignUp.css";
+import "./Register.css";
 
-export default function SignUp() {
+export default function Register() {
     const [role, setRole] = useState("patient");
     const [email, setEmai] = useState("");
     const [password, setPassword] = useState("");
@@ -97,7 +97,7 @@ export default function SignUp() {
     };
 
     return (
-        <div className="signup-page">
+        <div className="register-page">
             <div className="content">
                 <h2>Registration Form</h2>
                 <form>
@@ -222,7 +222,7 @@ export default function SignUp() {
 
                     {renderInputForm()}
 
-                    <button>Sign Up</button>
+                    <button>Register</button>
                 </form>
                 <div className="footer">
                     <p>
