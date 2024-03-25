@@ -9,7 +9,7 @@ export default function LogIn() {
     return (
         <div className="login-page">
             <div className="content">
-                <h2>Sign In</h2>
+                <h2>Login</h2>
                 <form>
                     <input
                         type="text"
@@ -31,7 +31,7 @@ export default function LogIn() {
                 <div className="footer">
                     <p>
                         Don't have an account?
-                        <Link to="/signup">Sign up</Link>
+                        <Link to="/register">Register</Link>
                     </p>
                 </div>
             </div>
