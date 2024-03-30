@@ -11,7 +11,7 @@ import { AuthProvider } from "./context/AuthContext";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import UpdateProfile from "./pages/UpdateProfile/UpdateProfile";
-import PrivateRoute from "./Components/PrivateRoute";
+import PrivateRoute from "./components/PrivateRoute";
 
 export default function App() {
     return (
@@ -31,7 +31,7 @@ export default function App() {
                     {/* Define a route with PrivateRoute as the element */}
                     <Route element={<PrivateRoute />}>
                         {/* Define protected routes as children */}
-                        <Route path="userprofile" element={<UpdateProfile />} />
+                        {/* <Route path="userprofile" element={<UpdateProfile />} /> */}
                         <Route path="dashboard" element={<Dashboard />} />
                     </Route>
                 </Routes>
