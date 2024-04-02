@@ -9,7 +9,6 @@ import Account from "./pages/Account/Account";
 import FindADoctor from "./pages/FindADoctor/FindADoctor";
 import FindAnInsurance from "./pages/FindAnInsurance/FindAnInsurance";
 import Appointments from "./pages/Appointments/Appointments";
-import PrivateRoute from "./components/PrivateRoute";
 
 export default function App() {
     return (
@@ -27,11 +26,11 @@ export default function App() {
                     <Route path="patient/appointments" element={<Appointments />} />
 
                     {/* Define a route with PrivateRoute as the element */}
-                    <Route element={<PrivateRoute />}>
+                    {/* <Route element={<PrivateRoute />}> */}
                         {/* Define protected routes as children */}
                         {/* <Route path="userprofile" element={<UpdateProfile />} /> */}
                         {/* <Route path="dashboard" element={<Dashboard />} /> */}
-                    </Route>
+                    {/* </Route> */}
                 </Routes>
             </AuthProvider>
         </Router>
