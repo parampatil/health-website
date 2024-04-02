@@ -74,3 +74,14 @@
 .login-page .footer p a {
     margin-left: 5px;
 }
+
+.error-message {
+    margin-top: 20px;
+    margin-bottom: 11px;
+    border: 1px solid red;
+    background-color: #ffe6e6;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}

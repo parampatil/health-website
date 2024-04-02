@@ -7,12 +7,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import userPlaceholder from "../../assets/images/user-placeholder.png";
 import PatientHeader from "../../components/PatientHeader/PatientHeader";
-import DoctorHeader from "../../components/DoctorHeader/DoctorHeader"
+import DoctorHeader from "../../components/DoctorHeader/DoctorHeader";
 import "./Account.css";
 
 export default function Account() {
     const { currentUser, logout } = useAuth();
-
     const [userData, setUserData] = useState(null);
     const [role, setRole] = useState("doctor");
     const [email, setEmai] = useState("");
