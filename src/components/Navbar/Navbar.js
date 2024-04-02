@@ -1,13 +1,11 @@
 import { useState } from "react"
-import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
+import { useNavigate, Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
     const [error, setError] = useState("");
-
     const { logout } = useAuth();
-    
     const navigate = useNavigate();
 
     async function handleLogout() {
@@ -25,7 +23,7 @@ export default function Navbar() {
         <nav className="navbar">
             <ul>
                 <li>
-                    Careconnect360
+                    Careconnect 360
                 </li>
                 <div className="auth-options">
                     <li className="userprofile-link">

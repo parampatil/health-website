@@ -1,25 +1,25 @@
 import axios from "axios";
 import { API_URL } from "../services/config";
 
-export default function register(user) {
+const register = (userData) => {
     return axios.post(
-        API_URL + "register",
+        API_URL + "signup",
         {
-            userId: user.userId,
-            role: user.role,
-            firstName: user.firstName,
-            lastName: user.lastName,
-            gender: user.gender,
-            phoneNumber: user.phoneNumber,
-            dateOfBirth: user.dateOfBirth,
-            streetAddress: user.streetAddress,
-            country: user.country,
-            state: user.state,
-            city: user.city,
-            zipCode: user.zipCode,
-            doctorLic: user.role === "doctor" ? user.doctorlic : undefined,
-            company: user.role === "insuranceProvider" ? user.company : undefined,
-            companyLic: user.role === "insuranceProvider" ? user.companylic : undefined,
+            userid: userData.userid,
+            firstname: userData.firstName,
+            lastName: userData.lastName,
+            role: userData.role,
+            gender: userData.gender,
+            phoneNumber: userData.phoneNumber,
+            dateOfBirth: userData.dateOfBirth,
+            address: userData.address,
+            country: userData.country,
+            state: userData.state,
+            city: userData.city,
+            pincode: userData.pincode,
+            doctorLic: userData.role === 'doctor' ? userData.doctorlic : undefined,
+            company: userData.role === 'insuranceProvider' ? userData.company : undefined,
+            companyLic: userData.role === 'insuranceProvider' ? userData.companylic : undefined,
         },
         {
             headers: {
@@ -29,3 +29,5 @@ export default function register(user) {
         }
     );
 };
+
+export default register;

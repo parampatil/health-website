@@ -48,7 +48,6 @@ export default function Appointment({ setIsOpen }) {
     const handlePageLoadingSingle = useCallback((args) => {
         const d = args.firstDay;
 
-
         getJson(
             'https://mobiscroll.com/getprices/?year=' + d.getFullYear() + '&month=' + d.getMonth(),
             (bookings) => {

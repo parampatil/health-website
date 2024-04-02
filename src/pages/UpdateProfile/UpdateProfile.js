@@ -1,20 +1,19 @@
 import { useAuth } from "../../contexts/AuthContext";
+import Navbar from "../../components/NavBar/Navbar";
 import "./UpdateProfile.css";
-import Navbar from "../../components/Navbar/Navbar";
 
 export default function UpdateProfile() {
     const { currentUser } = useAuth()
 
     return (
-        <div className="userprofile">
+        <div className="updateprofile-page">
             <Navbar />
             <div className="profile"></div>
             <div className="content">
                 <form>
                     <input type="email"
                         required
-                        defaultValue={currentUser.email}
-                    />
+                        defaultValue={currentUser.email} />
                 </form>
             </div>
         </div>

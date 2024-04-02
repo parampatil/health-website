@@ -1,8 +1,8 @@
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/NavBar/Navbar";
 
 export default function Dashboard() {
     return (
-        <div className="dashboard">
+        <div className="dashboard-page">
             <Navbar />
         </div>
     );

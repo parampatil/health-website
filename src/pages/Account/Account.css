@@ -28,10 +28,6 @@
     cursor: pointer;
 }
 
-.account-page .save-btn {
-    background-color: green;
-}
-
 .account-page .logout-btn {
     background-color: brown;
 }
@@ -108,4 +104,15 @@
 
 .account-page .personal-information {
     display: block;
+}
+
+
+.account-page .save-btn {
+    background-color: green;
+}
+
+.account-page .save-btn:disabled {
+    background-color: gray; 
+    color: white; 
+    cursor: not-allowed; 
 }
