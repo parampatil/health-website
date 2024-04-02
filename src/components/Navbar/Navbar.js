@@ -1,30 +1,29 @@
-import React, { useState } from "react"
-import { useAuth } from "../../context/AuthContext";
+import { useState } from "react"
+import { useNavigate, Link } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 import "./Navbar.css";
-import { Link} from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-const Navbar = () => {
-    const { currentUser, logout } = useAuth();
+
+export default function Navbar() {
     const [error, setError] = useState("");
-    const navigate=useNavigate();
+    const { logout } = useAuth();
+    const navigate = useNavigate();
+
     async function handleLogout() {
         setError("")
         try {
             await logout()
             navigate('/login')
-
         }
-        catch{
+        catch {
             setError("Failed to logout")
-
         }
     }
+
     return (
-        
         <nav className="navbar">
             <ul>
                 <li>
-                    Careconnect 360
+                    Careconnect360
                 </li>
                 <div className="auth-options">
                     <li className="userprofile-link">
@@ -47,8 +46,5 @@ const Navbar = () => {
             </ul>
             {error && <div>{error}</div>}
         </nav>
-
     );
 }
-
-export default Navbar;
