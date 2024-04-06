@@ -100,6 +100,22 @@
     margin-bottom: 10px;
 }
 
+.appointment .doctor-reviews button {
+    background-color: brown;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.appointment .doctor-reviews button:hover {
+    background-color: rgb(104, 0, 0);
+    cursor: pointer;
+}
+
 .appointment .doctor-reviews .doctor-review {
     margin-bottom: 20px;
 }

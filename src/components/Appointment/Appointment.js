@@ -5,6 +5,7 @@ import '@mobiscroll/react/dist/css/mobiscroll.min.css';
 import { IoIosCloseCircle } from "react-icons/io";
 import { GoCheckCircleFill } from "react-icons/go";
 import doctorImage from "../../assets/images/doctor.jpg";
+import Survey from "../Survey/Survey";
 import "./Appointment.css";
 
 setOptions({
@@ -243,6 +244,9 @@ export default function Appointment({ setAppointmentIsOpen }) {
                                         setSurveyIsOpen(true);
                                     }}
                                 />
+                                {surveyIsOpen && (
+                                    <Survey setSurveyIsOpen={setSurveyIsOpen} />
+                                )}
                             </div>
                         </Page>
                     </div>
