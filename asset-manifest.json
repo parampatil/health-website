@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/health-website/static/css/main.8ca7c948.css",
+    "main.js": "/health-website/static/js/main.90401e22.js",
+    "static/media/home-bg.jpg": "/health-website/static/media/home-bg.0f575ed17d15878430fd.jpg",
+    "static/media/user-placeholder.png": "/health-website/static/media/user-placeholder.b99b397bc6824c6e0d36.png",
+    "static/media/login-bg.jpg": "/health-website/static/media/login-bg.6853d9a72efc01b44356.jpg",
+    "static/media/doctor.jpg": "/health-website/static/media/doctor.e997bf037bfc017e92ff.jpg",
+    "index.html": "/health-website/index.html",
+    "main.8ca7c948.css.map": "/health-website/static/css/main.8ca7c948.css.map",
+    "main.90401e22.js.map": "/health-website/static/js/main.90401e22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ca7c948.css",
+    "static/js/main.90401e22.js"
+  ]
+}
